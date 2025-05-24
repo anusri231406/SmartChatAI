@@ -306,13 +306,18 @@
         background: none;
         border: none;
         cursor: pointer;
-        color: white !important;
+        color: white;
         font-size: 24px;
         padding: 8px;
         position: absolute;
         right: 16px;
         top: 50%;
         transform: translateY(-50%);
+      }
+      .mobile-menu-btn svg {
+        width: 28px;
+        height: 28px;
+        stroke-width: 2.5;
       }
       .mobile-menu {
         position: fixed;
@@ -385,7 +390,6 @@
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
         >
           <path d="M3 12h18M3 6h18M3 18h18" />
         </svg>
@@ -1115,6 +1119,7 @@
         modal.innerHTML = `
         <div class="modal-content">
           <h3 class="text-2xl font-bold text-gray-900 mb-4">Login</h3>
+          <div>
             <label for="login-email">Email</label>
             <input type="email" id="login-email" placeholder="Your email" required />
           </div>
